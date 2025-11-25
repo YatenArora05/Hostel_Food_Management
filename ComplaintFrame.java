@@ -25,6 +25,7 @@ public class ComplaintFrame extends JFrame implements ActionListener {
         setSize(600,300); setVisible(true); setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
+    
     public void actionPerformed(ActionEvent ae) {
         try (Connection c = DBConnection.getConnection();
              Statement st = c.createStatement()) {
