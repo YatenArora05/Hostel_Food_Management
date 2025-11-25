@@ -19,7 +19,6 @@ public class MealBookingFrame extends JFrame implements ActionListener {
         setTitle("Meal Booking");
         setLayout(new GridLayout(5,1));
         JPanel p;
-
         p = new JPanel(); p.add(new JLabel("Menu Item:")); cbMenu = new JComboBox<>(); p.add(cbMenu); add(p);
         p = new JPanel(); p.add(new JLabel("Date (YYYY-MM-DD):")); tfDate = new JTextField(10); p.add(tfDate); add(p);
         p = new JPanel(); p.add(new JLabel("Meal Type:")); cbMealType = new JComboBox<>(new String[]{"breakfast","lunch","dinner"}); p.add(cbMealType);
