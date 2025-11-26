@@ -27,7 +27,7 @@ public class ComplaintFrame extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         try (Connection c = DBConnection.getConnection();
-             Statement st = c.createStatement()) {
+             Statement st =  c.createStatement()) {
             String sql = "INSERT INTO complaints(user_id,subject,message) VALUES("
                     + userId + ",'"
                     + tfSubject.getText() + "','"
