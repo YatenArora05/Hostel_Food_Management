@@ -14,8 +14,8 @@ public class ComplaintFrame extends JFrame implements ActionListener {
 
     public ComplaintFrame(int userId) {
         this.userId = userId;
-        setTitle("File Complaint");
-        setLayout(new GridLayout(4,1));
+        setTitle("File Complaint");  //Window title
+        setLayout(new GridLayout(4,1));   //grid layout
         JPanel p;
 
         p = new JPanel(); p.add(new JLabel("Subject:")); tfSubject = new JTextField(25); p.add(tfSubject); add(p);
