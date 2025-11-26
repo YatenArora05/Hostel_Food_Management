@@ -5,7 +5,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
-import java.util.Vector;
 
 public class MealBookingFrame extends JFrame implements ActionListener {
     JComboBox<String> cbMenu;
@@ -59,3 +58,5 @@ public class MealBookingFrame extends JFrame implements ActionListener {
         }
     }
 }
+
+

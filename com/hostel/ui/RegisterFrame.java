@@ -22,7 +22,7 @@ public class RegisterFrame extends JFrame implements ActionListener {
         p = new JPanel(); p.add(new JLabel("Password:")); pfPass = new JPasswordField(15); p.add(pfPass); add(p);
         p = new JPanel(); p.add(new JLabel("Re-Password:")); pfRePass = new JPasswordField(15); p.add(pfRePass); add(p);
         p = new JPanel(); p.add(new JLabel("Full Name:")); tfFullName = new JTextField(15); p.add(tfFullName); add(p);
-        p = new JPanel(); p.add(new JLabel("Contact:")); tfContact = new JTextField(12); p.add(tfContact); 
+        p = new JPanel(); p.add(new JLabel("Contact:")); tfContact = new JTextField(12); p.add(tfContact);
              cbRole = new JComboBox<>(new String[]{"student","staff"}); p.add(new JLabel("Role:")); p.add(cbRole); add(p);
         p = new JPanel();
         btnSubmit = new JButton("Submit"); btnSubmit.addActionListener(this); p.add(btnSubmit);
@@ -69,3 +69,5 @@ public class RegisterFrame extends JFrame implements ActionListener {
 
     public static void main(String[] args) { new RegisterFrame(); }
 }
+
+
